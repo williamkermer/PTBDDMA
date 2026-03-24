@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://1h5enpcs66kw"]
+
+[ext_resource type="Script" uid="uid://cjcbndn4xjxpo" path="res://calculadora.gd" id="1_5y10g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f0tug"]
+
+[node name="Calculadora" type="Control" unique_id=1892199571]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_5y10g")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1833245733]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 647.0
+theme_override_constants/separation = 6
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer" unique_id=1925622467]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_f0tug")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/PanelContainer" unique_id=1776877943]
+layout_mode = 2
+
+[node name="expressao_label" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer" unique_id=1272877127]
+layout_mode = 2
+horizontal_alignment = 2
+
+[node name="resultado_label" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer" unique_id=933236563]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "0"
+horizontal_alignment = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer" unique_id=1329872464]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+columns = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/GridContainer" unique_id=1741875507 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "7"
+
+[node name="Button2" type="Button" parent="VBoxContainer/GridContainer" unique_id=1550908258 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "8"
+
+[node name="Button3" type="Button" parent="VBoxContainer/GridContainer" unique_id=415367186 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "9"
+
+[node name="Button4" type="Button" parent="VBoxContainer/GridContainer" unique_id=1867197444 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "4"
+
+[node name="Button5" type="Button" parent="VBoxContainer/GridContainer" unique_id=1859508768 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "5"
+
+[node name="Button6" type="Button" parent="VBoxContainer/GridContainer" unique_id=401036554 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "6"
+
+[node name="Button7" type="Button" parent="VBoxContainer/GridContainer" unique_id=2035946196 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Button8" type="Button" parent="VBoxContainer/GridContainer" unique_id=4228507 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "2"
+
+[node name="Button9" type="Button" parent="VBoxContainer/GridContainer" unique_id=1594985032 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="Button10" type="Button" parent="VBoxContainer/GridContainer" unique_id=1116454466 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="Button11" type="Button" parent="VBoxContainer/GridContainer" unique_id=701339887 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "C"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=65567828]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.67
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1449452983 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+text = "+"
+
+[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=256621325 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+text = "-"
+
+[node name="Button3" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=239024344 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+text = "x"
+
+[node name="Button4" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1055278220 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+text = "÷"
+
+[node name="Button5" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=210343646 groups=["botoes"]]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+text = "="
