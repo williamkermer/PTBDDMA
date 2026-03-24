@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://bisp2ml4x5mtc"]
+
+[ext_resource type="Texture2D" uid="uid://b0axm4cfobak7" path="res://Atividade_4/flask-solid-full.svg" id="1_cpt7q"]
+[ext_resource type="Texture2D" uid="uid://bcxlxf45g7j6y" path="res://Atividade_4/scroll-solid-full.svg" id="2_7ywtm"]
+[ext_resource type="Texture2D" uid="uid://c6ve5530fob7c" path="res://Atividade_4/key-solid-full.svg" id="3_3uvtm"]
+
+[node name="MenuPersonagem" type="Control" unique_id=15872546]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="." unique_id=1295016220]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 648.0
+current_tab = 1
+
+[node name="Status" type="MarginContainer" parent="TabContainer" unique_id=1056641440]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Status" unique_id=978228295]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="AtaqueLabel" type="Label" parent="TabContainer/Status/VBoxContainer" unique_id=1683625375]
+layout_mode = 2
+text = "⚔️ Ataque: 15"
+
+[node name="DefesaLabel" type="Label" parent="TabContainer/Status/VBoxContainer" unique_id=2078616405]
+layout_mode = 2
+text = "🛡️ Defesa: 10"
+
+[node name="VelocidadeLabel" type="Label" parent="TabContainer/Status/VBoxContainer" unique_id=933802479]
+layout_mode = 2
+text = "🏃 Velocidade: 8"
+
+[node name="Mochila" type="MarginContainer" parent="TabContainer" unique_id=207648366]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Mochila" unique_id=269988604]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="poção" type="TextureRect" parent="TabContainer/Mochila/HBoxContainer" unique_id=1407288990]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_cpt7q")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="pergaminho" type="TextureRect" parent="TabContainer/Mochila/HBoxContainer" unique_id=1397759929]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_7ywtm")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="chave" type="TextureRect" parent="TabContainer/Mochila/HBoxContainer" unique_id=747090024]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_3uvtm")
+expand_mode = 5
+stretch_mode = 5

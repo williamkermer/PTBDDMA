@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://b7uv0nj2qr1aa"]
+
+[ext_resource type="Script" uid="uid://ce4ieqmiq1n8k" path="res://Atividade_5/tela_cadastro.gd" id="1_8npr5"]
+
+[node name="TelaCadastro" type="Control" unique_id=606736146]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8npr5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=927671076]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 143.0
+offset_right = 999.0
+offset_bottom = 542.0
+theme_override_constants/separation = 5
+
+[node name="InputNome" type="LineEdit" parent="VBoxContainer" unique_id=1615931725]
+layout_mode = 2
+placeholder_text = "Nome"
+
+[node name="InputEmail" type="LineEdit" parent="VBoxContainer" unique_id=1219899200]
+layout_mode = 2
+placeholder_text = "Email"
+
+[node name="InputSenha" type="LineEdit" parent="VBoxContainer" unique_id=1050995009]
+layout_mode = 2
+placeholder_text = "Senha"
+secret = true
+
+[node name="InputConfirmarSenha" type="LineEdit" parent="VBoxContainer" unique_id=170560729]
+layout_mode = 2
+placeholder_text = "Confirmar Senha"
+secret = true
+
+[node name="BotaoCadastrar" type="Button" parent="VBoxContainer" unique_id=1701131285]
+layout_mode = 2
+text = "Cadastrar"
+
+[node name="LabelMensagem" type="Label" parent="VBoxContainer" unique_id=1805319901]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=714142549]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 70.0
+offset_right = 995.0
+offset_bottom = 115.0
+theme_override_font_sizes/font_size = 30
+text = "Tela de Cadastro"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/BotaoCadastrar" to="." method="_on_botao_cadastrar_pressed"]
