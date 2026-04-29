@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://cidq5wvij41r2"]
+
+[ext_resource type="Script" uid="uid://lk5npenjgtok" path="res://control.gd" id="1_fj5cn"]
+[ext_resource type="Texture2D" uid="uid://8540m5v5aeet" path="res://button_04_bg.png" id="1_kbped"]
+[ext_resource type="Texture2D" uid="uid://dik3t060vrrbu" path="res://scale_01_07.png" id="3_iy58a"]
+[ext_resource type="Texture2D" uid="uid://65rpjs3ypfcu" path="res://banner_02_01.png" id="3_kbped"]
+[ext_resource type="Texture2D" uid="uid://dg6i35bweldyq" path="res://scale_01_06.png" id="4_6a6wx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ytqx"]
+texture = ExtResource("3_iy58a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pxugv"]
+texture = ExtResource("4_6a6wx")
+
+[node name="Control" type="Control" unique_id=689015092]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fj5cn")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=385223962]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CenterContainer" unique_id=1196830379]
+custom_minimum_size = Vector2(290, 250)
+layout_mode = 2
+texture = ExtResource("1_kbped")
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/NinePatchRect" unique_id=287950211]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 0
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/NinePatchRect/MarginContainer" unique_id=2058170594]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/NinePatchRect/MarginContainer/VBoxContainer" unique_id=1659508227]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Label" type="Label" parent="CenterContainer/NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer" unique_id=263649142]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1400691625]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("3_kbped")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ProgressBar" type="ProgressBar" parent="CenterContainer/NinePatchRect/MarginContainer/VBoxContainer" unique_id=1999090140]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/background = SubResource("StyleBoxTexture_0ytqx")
+theme_override_styles/fill = SubResource("StyleBoxTexture_pxugv")
+
+[node name="Button" type="Button" parent="CenterContainer/NinePatchRect/MarginContainer/VBoxContainer" unique_id=1346460568]
+layout_mode = 2
+text = "Clique aqui"
