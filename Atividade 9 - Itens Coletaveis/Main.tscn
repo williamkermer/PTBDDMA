@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://1x0fv0pv2yjy"]
+
+[ext_resource type="PackedScene" uid="uid://766jsikflxl" path="res://Player.tscn" id="1_f3sb7"]
+[ext_resource type="Script" uid="uid://0xofi7smwro" path="res://scripts/hud.gd" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://fr0bl4m51ssi" path="res://Item.tscn" id="3_tlwt5"]
+
+[node name="World" type="Node2D" unique_id=671208849]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=146140262]
+offset_right = 1158.0
+offset_bottom = 644.0
+color = Color(0, 0.4403361, 0, 1)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1904713740]
+script = ExtResource("2_fj7yv")
+
+[node name="Contador" type="Label" parent="HUD" unique_id=1542101378]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Itens: 0"
+
+[node name="Item" parent="." unique_id=1165586617 instance=ExtResource("3_tlwt5")]
+
+[node name="Player" parent="." unique_id=1000589449 instance=ExtResource("1_f3sb7")]
+position = Vector2(592, 333)
